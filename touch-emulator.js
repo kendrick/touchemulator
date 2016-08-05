@@ -291,9 +291,9 @@
      * TouchEmulator initializer
      */
     function TouchEmulator() {
-        if (hasTouchSupport()) {
-            return;
-        }
+        // if (hasTouchSupport()) {
+        //     return;
+        // }
 
         fakeTouchSupport();
 
