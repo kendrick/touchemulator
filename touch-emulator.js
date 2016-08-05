@@ -322,15 +322,16 @@
      * @returns object
      */
     TouchEmulator.template = function(touch) {
-        var size = 30;
+        var size = 36;
         var transform = 'translate('+ (touch.clientX-(size/2)) +'px, '+ (touch.clientY-(size/2)) +'px)';
         return {
             position: 'fixed',
             left: 0,
             top: 0,
-            background: '#fff',
-            border: 'solid 1px #999',
-            opacity: .6,
+            background: '#f0f0f0',
+            border: 'solid 2px #808080',
+            boxShadow: '0 2px 12px 0 rgba(0, 0, 0, 0.3)',
+            opacity: 0.6,
             borderRadius: '100%',
             height: size + 'px',
             width: size + 'px',
